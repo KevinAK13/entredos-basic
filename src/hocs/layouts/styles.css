@@ -1,0 +1,51 @@
+/* CSS for loader */
+.loader {
+    border: 0.5px solid rgba(0, 0, 0, 0.6);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: spin 1.2s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.loader-logo {
+    position: absolute;
+    width: 190px;
+    /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Keyframes for spin animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Additional styles for the page container */
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+    .loader {
+        width: 150px;
+        height: 150px;
+    }
+
+    .loader-logo {
+        width: 40px;
+        /* Adjust the size for mobile */
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
